@@ -1,6 +1,6 @@
 # Core system specification
 
-The core scope is notes, retrieval, tasks, and streaming chat with four agent tools. This is a backend/system contract; the runnable checkout is the [frontend simulation](../ciel-web/README.md). Client fixtures demonstrate flows without a database, model service, embeddings, or server authentication.
+The core scope is notes, retrieval, tasks, and streaming chat with four agent tools. This is a backend/system contract; the runnable checkout is the [frontend simulation](../web/README.md). Client fixtures demonstrate flows without a database, model service, embeddings, or server authentication.
 
 ## Functional requirements
 

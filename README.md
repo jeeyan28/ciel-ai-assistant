@@ -41,7 +41,7 @@ npm run build
 npm run preview
 ```
 
-Open the local URL printed by Vite. **Flow Explorer** runs guided scenarios; `Shift+D` opens Dev Lens and simulated loading, empty, and error states. See the [frontend guide](ciel-web/README.md) for shortcuts and interaction details.
+Open the local URL printed by Vite. **Flow Explorer** runs guided scenarios; `Shift+D` opens Dev Lens and simulated loading, empty, and error states. See the [frontend guide](web/README.md) for shortcuts and interaction details.
 
 ## Architecture
 
@@ -124,7 +124,7 @@ Ciel/
 │   ├── mvp.md / security.md         Core scope and security design
 │   ├── evaluation.md                Testing approach and evaluation criteria
 │   └── reference/                   Reference deployment layout
-├── ciel-web/
+├── web/
 │   ├── src/api/                     Typed contract and in-memory implementation
 │   ├── src/features/                Workspace screens, shell, unlock, and guided flows
 │   ├── src/state/                   In-memory Zustand stores
@@ -153,7 +153,7 @@ Vitest discovers colocated `src/**/*.test.ts` files. The suite covers scripted f
 
 | Document                                               | Contents                                              |
 | ------------------------------------------------------ | ----------------------------------------------------- |
-| [Frontend guide](ciel-web/README.md)                   | Commands, shortcuts, and simulation boundaries        |
+| [Frontend guide](web/README.md)                        | Commands, shortcuts, and simulation boundaries        |
 | [Interface design](docs/DESIGN.md)                     | Visual language, motion, and responsive interaction   |
 | [Product scope](docs/PRODUCT.md)                       | Demo behavior and specification boundary              |
 | [Architecture](docs/architecture.md)                   | System components, data model, and deployment design  |

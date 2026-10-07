@@ -1,6 +1,6 @@
 # System architecture specification
 
-This document defines the system design and its backend contracts. The executable checkout contains a frontend simulation in `ciel-web/`; it has no FastAPI service, PostgreSQL database, model integration, mailbox connection, or device firmware. See the [frontend README](../ciel-web/README.md) for implemented behavior and commands.
+This document defines the system design and its backend contracts. The executable checkout contains a frontend simulation in `web/`; it has no FastAPI service, PostgreSQL database, model integration, mailbox connection, or device firmware. See the [frontend README](../web/README.md) for implemented behavior and commands.
 
 ## Scope & Requirements
 

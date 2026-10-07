@@ -44,8 +44,8 @@ If you notice something else that looks wrong, write it in your final report und
 - `docs/` (the system specification is the source of truth; code follows it, not the other way around)
 - `private/` (user's private notes; not part of the repo)
 - `LICENSE`, `SECURITY.md`, `CHANGELOG.md`, `.github/`, `.githooks/`, `.gitleaks.toml`, `.env.example`
-- `package.json`, `package-lock.json`, `ciel-web/package.json` (except a script line the task names)
-- `ciel-web/src/api/contract.ts` and `ciel-web/src/api/client.ts` (these are the API contract)
+- `package.json`, `package-lock.json`, `web/package.json` (except a script line the task names)
+- `web/src/api/contract.ts` and `web/src/api/client.ts` (these are the API contract)
 
 ## 4. How to work on every task
 
@@ -95,7 +95,7 @@ Do not write the report to a file. Print it in the terminal only.
 ## 8. Project facts (for orientation only; not tasks)
 
 - Ciel is a single-user personal AI IT assistant.
-- Today the repo contains only a frontend simulation in `ciel-web/` (React, TypeScript, Vite, Zustand). The backend (FastAPI, PostgreSQL) does not exist yet.
+- Today the repo contains only a frontend simulation in `web/` (React, TypeScript, Vite, Zustand). The backend (FastAPI, PostgreSQL) does not exist yet.
 - Specification: `docs/architecture.md`, `docs/api.md`, `docs/security.md`, `docs/mvp.md`, `docs/evaluation.md`. Build order: `private/roadmap.md`.
 - Code style: follow the file you are in. The codebase uses single quotes and no semicolons.
 - Commands run from the repo root: `npm run lint`, `npm test`, `npm run build`.

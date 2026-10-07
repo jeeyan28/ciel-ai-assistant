@@ -1,6 +1,6 @@
 # System security specification
 
-This document defines security requirements and acceptance cases for the system design. The executable frontend is an in-memory simulation; its client checks do not establish production authentication, authorization, isolation, or privacy guarantees. The [frontend README](../ciel-web/README.md) describes the implemented boundary. Vulnerability reporting is documented in the root security policy.
+This document defines security requirements and acceptance cases for the system design. The executable frontend is an in-memory simulation; its client checks do not establish production authentication, authorization, isolation, or privacy guarantees. The [frontend README](../web/README.md) describes the implemented boundary. Vulnerability reporting is documented in the root security policy.
 
 ## Threat Model (single-user, self-hosted)
 

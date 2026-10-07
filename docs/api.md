@@ -1,6 +1,6 @@
 # API specification
 
-This document defines backend routes and tool contracts. No HTTP API service is implemented in this checkout. The frontend calls the 26-method `CielApi` interface through `DemoApi` and simulates its responses in memory; connection, automation, notification, and live GitHub contracts are outside that adapter. See the [frontend README](../ciel-web/README.md) for the implemented surface.
+This document defines backend routes and tool contracts. No HTTP API service is implemented in this checkout. The frontend calls the 26-method `CielApi` interface through `DemoApi` and simulates its responses in memory; connection, automation, notification, and live GitHub contracts are outside that adapter. See the [frontend README](../web/README.md) for the implemented surface.
 
 Base URL: `https://<host or tailnet>/api/v1` · Auth: `Authorization: Bearer <CIEL_TOKEN>` (user) or `Bearer <DEVICE_TOKEN>` (ESP32, restricted scope) · Format: JSON unless noted.
 

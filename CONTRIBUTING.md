@@ -21,7 +21,7 @@ Open <http://127.0.0.1:5173>. Select **Use demo token**, then **Unlock workspace
 
 ## Development workflow
 
-1. All work happens in the `ciel-web` workspace.
+1. All work happens in the `web` workspace.
 2. Write code following the existing conventions (see below).
 3. Add or update tests for your changes.
 4. Ensure all checks pass before opening a pull request.

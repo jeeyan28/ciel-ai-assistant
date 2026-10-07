@@ -56,7 +56,7 @@ The clock is fixed at **Sunday, 4 October 2026, 09:30 Asia/Manila**. “Yesterda
 ## Project structure
 
 ```text
-ciel-web/
+web/
   public/                  Local favicon and PWA icons
   scripts/                 Icon generation
   src/

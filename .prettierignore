@@ -1,9 +1,9 @@
 # Dependencies and build output
-ciel-web/node_modules/
+web/node_modules/
 **/node_modules/
-ciel-web/dist/
+web/dist/
 **/dist/
-ciel-web/.vite/
+web/.vite/
 
 # Generated
 **/*.tsbuildinfo

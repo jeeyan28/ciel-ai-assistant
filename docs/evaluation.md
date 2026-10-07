@@ -12,7 +12,7 @@ npm run lint
 npm run build
 ```
 
-The colocated unit tests cover scenario matching, deterministic dates, canonical hashing, citation filtering, confirmation handling, validation, API invariants, chat cancellation, and sanitized Markdown. The test configuration is in `ciel-web/vite.config.ts`.
+The colocated unit tests cover scenario matching, deterministic dates, canonical hashing, citation filtering, confirmation handling, validation, API invariants, chat cancellation, and sanitized Markdown. The test configuration is in `web/vite.config.ts`.
 
 Fixture latency and model-evaluation values displayed by the application are samples, not measurements.
 
