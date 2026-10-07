@@ -1,0 +1,10 @@
+# Ciel secret-scanning configuration; see docs/security.md, Repository Hygiene.
+# Extends the default ruleset for manually invoked scans.
+title = "Ciel gitleaks config"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Placeholder values in the environment configuration reference"
+paths = ['''\.env\.example$''']

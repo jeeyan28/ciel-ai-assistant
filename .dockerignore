@@ -1,0 +1,15 @@
+# Root build context only — Docker applies this file to builds whose context is
+# the repo root. The compose file builds from ./backend and ./web, so each of
+# those directories needs its OWN .dockerignore (M1 deliverable — see
+# docs/roadmap.md, Milestone 1). This root file still matters for any
+# `docker build .` run and for keeping private/ and .env out of every context.
+private/
+.env
+.env.*
+!.env.example
+.git
+node_modules
+__pycache__
+*.pyc
+data/
+audio/

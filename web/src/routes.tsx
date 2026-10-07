@@ -1,0 +1,13 @@
+import { lazy } from 'react'
+export const Chat = lazy(() => import('./features/chat/Chat'))
+export const Notes = lazy(() => import('./features/notes/Notes'))
+export const Tasks = lazy(() => import('./features/tasks/Tasks'))
+export const Projects = lazy(() => import('./features/projects/Projects'))
+export const Audit = lazy(() => import('./features/audit/Audit'))
+export const Brief = lazy(() => import('./features/brief/Brief'))
+export const Voice = lazy(() => import('./features/voice/Voice'))
+export const Email = lazy(() => import('./features/email/Email'))
+export const Device = lazy(() => import('./features/device/Device'))
+export const System = lazy(() => import('./features/system/System'))
+export const BuildMap = lazy(() => import('./features/buildmap/BuildMap'))
+export const Settings = lazy(() => import('./features/system/Settings'))

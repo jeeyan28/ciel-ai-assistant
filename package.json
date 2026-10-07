@@ -1,0 +1,23 @@
+{
+  "name": "ciel-workspace",
+  "private": true,
+  "workspaces": [
+    "ciel-web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=ciel-web",
+    "build": "npm run build --workspace=ciel-web",
+    "preview": "npm run preview --workspace=ciel-web",
+    "test": "npm run test --workspace=ciel-web",
+    "lint": "npm run lint --workspace=ciel-web",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "25.6.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.9"
+  }
+}

@@ -1,0 +1,64 @@
+# Docker Compose reference configuration
+#
+# This is a DESIGN REFERENCE for the system architecture described in
+# docs/architecture.md. The backend build contexts (./backend) and (./web)
+# do NOT exist in this checkout — this file documents the deployment layout,
+# not runnable services.
+
+services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file: .env
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - CIEL_TIMEZONE=${CIEL_TIMEZONE:-Asia/Manila}
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  db:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    command:
+      - postgres
+      - -c shared_buffers=256MB
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    init: true
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', 'ciel']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  scanner:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.scanner
+    user: 'nobody:nogroup'
+    read_only: true
+    network_mode: 'none'
+    volumes:
+      - type: bind
+        source: /data/projects
+        target: /data/projects
+        read_only: true
+    mem_limit: 512m
+    cpus: 1.0
+
+volumes:
+  pgdata:

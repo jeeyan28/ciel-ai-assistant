@@ -1,0 +1,44 @@
+# Secrets — never committed
+.env
+.env.*
+!.env.example
+
+# Private working files (kept out of the public repo by design)
+private/
+# Local archive containing private notes, dependencies, and Git metadata
+/ciel.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+
+# Node
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# Local data / generated audio (anchored: source packages named data/ or
+# audio/ anywhere else are NOT ignored)
+/data/
+/audio/
+*.wav
+*.mp3
+!evals/fixtures/**
+
+# Keys / certs
+*.pem
+*.key
+
+# Editors
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+#!/bin/sh
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks protect --staged --redact --config .gitleaks.toml
+  exit $?
+else
+  echo "gitleaks is not installed; skipping local secret scan. Install it from https://github.com/gitleaks/gitleaks"
+  exit 0
+fi

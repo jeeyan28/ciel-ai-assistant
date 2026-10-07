@@ -1,0 +1,44 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# TypeScript and JavaScript
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.cjs  text eol=lf
+
+# JSON
+*.json text eol=lf
+*.json5 text eol=lf
+
+# YAML
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# Markdown
+*.md   text eol=lf
+
+# CSS
+*.css  text eol=lf
+*.scss text eol=lf
+
+# HTML
+*.html text eol=lf
+
+# Shell scripts
+*.sh   text eol=lf
+*.sh text eol=lf
+
+# Ensure proper line endings for lock files
+package-lock.json text eol=lf
+
+# Images and binaries should not be line-ending normalized
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.svg  text eol=lf
+*.woff text eol=lf
+*.woff2 text eol=lf
