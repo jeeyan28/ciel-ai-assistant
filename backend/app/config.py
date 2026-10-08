@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     ciel_token: str
     device_token: str = ""
     postgres_password: str
+    database_url: str
     ciel_timezone: str = "Asia/Manila"
 
 

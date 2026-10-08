@@ -13,6 +13,7 @@ def load_settings(monkeypatch, **overrides):
         "CIEL_TOKEN": SECRET_TOKEN,
         "DEVICE_TOKEN": "",
         "POSTGRES_PASSWORD": SECRET_PASSWORD,
+        "DATABASE_URL": "postgresql+psycopg://test:test@localhost:5432/test",
         "CIEL_TIMEZONE": "Asia/Manila",
     }
     env.update(overrides)

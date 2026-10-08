@@ -8,6 +8,7 @@ def test_healthz(monkeypatch):
     monkeypatch.setenv("CIEL_TOKEN", "healthz-ciel-token-0123456789abcdef")
     monkeypatch.setenv("DEVICE_TOKEN", "")
     monkeypatch.setenv("POSTGRES_PASSWORD", "healthz-postgres-secret")
+    monkeypatch.setenv("DATABASE_URL", "postgresql+psycopg://test:test@localhost:5432/test")
     monkeypatch.setenv("CIEL_TIMEZONE", "Asia/Manila")
     get_settings.cache_clear()
 
