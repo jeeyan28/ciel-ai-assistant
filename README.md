@@ -12,15 +12,15 @@ Ciel is designed for one user: capture notes, find them again with cited answers
 
 ## What works today
 
-| Area | Status |
-| --- | --- |
-| Frontend demo (React, TypeScript): 12 screens, 15 scripted chat scenarios, confirmation-gated writes | Working, fictional in-memory data |
-| Backend API: FastAPI app, startup guard that rejects weak secrets, JSON request logs without query strings | Working |
-| Health checks: `/healthz` (process is alive) and `/readyz` (database reachable) | Working |
-| Docker Compose: PostgreSQL 16 with pgvector, API container, separate owner and least-privilege database users | Working |
-| Database schema (7 tables) and migrations | Next |
-| Bearer-token authentication for `/api/v1` | Next |
-| Notes, retrieval with citations, tasks, streaming chat, tool confirmation | Planned (see roadmap) |
+| Area                                                                                                          | Status                            |
+| ------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Frontend demo (React, TypeScript): 12 screens, 15 scripted chat scenarios, confirmation-gated writes          | Working, fictional in-memory data |
+| Backend API: FastAPI app, startup guard that rejects weak secrets, JSON request logs without query strings    | Working                           |
+| Health checks: `/healthz` (process is alive) and `/readyz` (database reachable)                               | Working                           |
+| Docker Compose: PostgreSQL 16 with pgvector, API container, separate owner and least-privilege database users | Working                           |
+| Database schema (7 tables) and migrations                                                                     | Next                              |
+| Bearer-token authentication for `/api/v1`                                                                     | Next                              |
+| Notes, retrieval with citations, tasks, streaming chat, tool confirmation                                     | Planned (see roadmap)             |
 
 ## Screenshots
 
@@ -82,13 +82,13 @@ The solid path runs today. The dotted path is the target described in the [archi
 
 ## Tech stack
 
-| Area | Technology |
-| --- | --- |
-| Frontend | React, TypeScript, Vite, Zustand, Tailwind CSS, Framer Motion |
-| Backend | Python 3.14, FastAPI, SQLAlchemy, psycopg, pydantic-settings |
-| Database | PostgreSQL 16 with pgvector |
-| Infrastructure | Docker, Docker Compose |
-| Testing and quality | Vitest, ESLint, pytest, ruff |
+| Area                | Technology                                                    |
+| ------------------- | ------------------------------------------------------------- |
+| Frontend            | React, TypeScript, Vite, Zustand, Tailwind CSS, Framer Motion |
+| Backend             | Python 3.14, FastAPI, SQLAlchemy, psycopg, pydantic-settings  |
+| Database            | PostgreSQL 16 with pgvector                                   |
+| Infrastructure      | Docker, Docker Compose                                        |
+| Testing and quality | Vitest, ESLint, pytest, ruff                                  |
 
 ## Testing
 
@@ -141,17 +141,17 @@ Most of the code is written with AI coding agents under strict rules in [AGENTS.
 
 ## Documentation
 
-| Document | Contents |
-| --- | --- |
-| [Architecture](docs/architecture.md) | Components, data model, deployment design |
-| [API](docs/api.md) | Endpoint contracts, error types, streaming events |
-| [Security](docs/security.md) | Threat model and guardrails |
-| [MVP scope](docs/mvp.md) | Core requirements and acceptance criteria |
-| [Evaluation](docs/evaluation.md) | Testing approach and quality targets |
-| [Interface design](docs/DESIGN.md) | Visual language and interaction |
-| [Frontend guide](web/README.md) | Demo commands, shortcuts and simulation boundaries |
-| [Contributing](CONTRIBUTING.md) | Development workflow |
-| [Security policy](SECURITY.md) | Reporting vulnerabilities |
+| Document                             | Contents                                           |
+| ------------------------------------ | -------------------------------------------------- |
+| [Architecture](docs/architecture.md) | Components, data model, deployment design          |
+| [API](docs/api.md)                   | Endpoint contracts, error types, streaming events  |
+| [Security](docs/security.md)         | Threat model and guardrails                        |
+| [MVP scope](docs/mvp.md)             | Core requirements and acceptance criteria          |
+| [Evaluation](docs/evaluation.md)     | Testing approach and quality targets               |
+| [Interface design](docs/DESIGN.md)   | Visual language and interaction                    |
+| [Frontend guide](web/README.md)      | Demo commands, shortcuts and simulation boundaries |
+| [Contributing](CONTRIBUTING.md)      | Development workflow                               |
+| [Security policy](SECURITY.md)       | Reporting vulnerabilities                          |
 
 ## License
 

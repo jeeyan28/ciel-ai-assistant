@@ -5,6 +5,7 @@ Rules for any AI agent working in this repository. Read this fully before every 
 ## NEVER — secrets (no exceptions, never ask permission)
 
 You must NEVER read, open, view, search inside, list the contents of, print, copy, diff, edit, create, or quote:
+
 - `.env` or any `.env.*` file, in any folder (root, `backend/`, `web/`, anywhere). The ONLY exception is `.env.example`.
 - `*.pem`, `*.key`, `id_rsa*`, `.npmrc`, or any credentials or token file.
 
@@ -72,12 +73,14 @@ If you notice something else that looks wrong, write it in your final report und
 ## 5. Ask, don't assume
 
 Ask me a question BEFORE you edit anything if:
+
 - the task has two or more reasonable readings,
 - a name, path, value, or behavior is missing from the task,
 - you are about to choose between options (a library, a file location, a naming style, a design),
 - the result would add a feature, screen, route, option, or behavior I did not name.
 
 How to ask:
+
 - ONE question at a time, short, with 2 to 3 numbered options and your recommended option marked.
 - Then STOP and wait. Do not continue with "assumptions". Do not edit while waiting.
 - Do not ask about things the task already answers or things you can check by reading the code.
@@ -117,8 +120,9 @@ Do not write the report to a file. Print it in the terminal only.
 ## 9. Explain (the user is learning)
 
 After the report, print an "Explain" block in the terminal. Never write it to a file or into code comments.
+
 - What changed, in plain words (max 5 lines).
 - Why each changed file exists (one sentence per file).
 - One concept a beginner may not know, in 2 sentences.
 - The one file to read first to follow how it works.
-Do not add extra code, files, or features "to teach".
+  Do not add extra code, files, or features "to teach".
