@@ -1,6 +1,8 @@
 # System architecture specification
 
-This document defines the system design and its backend contracts. The executable checkout contains a frontend simulation in `web/`; it has no FastAPI service, PostgreSQL database, model integration, mailbox connection, or device firmware. See the [frontend README](../web/README.md) for implemented behavior and commands.
+> Design specification. See the README for current implementation status.
+
+This document defines the system design and its backend contracts. The executable checkout contains a frontend simulation in `web/` and a backend foundation in `backend/` (a FastAPI app with health checks, and Docker Compose with PostgreSQL and pgvector); it has no model integration, mailbox connection, or device firmware yet. See the [frontend README](../web/README.md) for implemented behavior and commands.
 
 ## Scope & Requirements
 
